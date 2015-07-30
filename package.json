@@ -1,0 +1,54 @@
+{
+  "name": "datasets-nightingales-rose",
+  "version": "0.0.0",
+  "description": "Dataset for Nightingale's famous polar area diagram.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "mocha",
+    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/datasets-io/nightingales-rose.git"
+  },
+  "keywords": [
+    "datasets.io",
+    "datasets-io",
+    "datasets",
+    "dataset",
+    "data",
+    "sample",
+    "nightingale",
+    "florence",
+    "polar area",
+    "chart",
+    "rose",
+    "crimean war",
+    "statistics",
+    "stats"
+  ],
+  "bugs": {
+    "url": "https://github.com/datasets-io/nightingales-rose/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "3.x.x",
+    "codecov.io": "^0.1.5",
+    "istanbul": "^0.3.0",
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x",
+    "mocha": "2.x.x"
+  },
+  "license": "MIT"
+}
