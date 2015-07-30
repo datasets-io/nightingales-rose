@@ -15,6 +15,8 @@ Nightingale's Rose
 $ npm install datasets-nightingales-rose
 ```
 
+For use in the browser, use [browserify](https://github.com/substack/node-browserify).
+
 
 ## Usage
 
