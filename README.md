@@ -27,7 +27,7 @@ console.log( data );
 /*
 	[
 		{
-			"date": "",
+			"date": "1854-04-01T07:00:00.000Z",
 			"army_size": 8571,
 			"disease": 1,
 			"wounds": 0,
@@ -42,7 +42,21 @@ console.log( data );
 ## Examples
 
 ``` javascript
+var data = require( 'datasets-nightingales-rose' );
 
+var len = data.length,
+	scalar,
+	d, i;
+
+// Calculate the average annual mortality per 1000 for each cause, as done by Nightingale. See http://understandinguncertainty.org/node/214.
+for ( i = 0; i < len; i++ ) {
+	d = data[ i ];
+	scalar = 1000*12 / d.army_size;
+	d.disease = d.disease * scalar;
+	d.wounds = d.wounds * scalar;
+	d.other = d.other * scalar;
+}
+console.dir( data );
 ```
 
 To run the example code from the top-level application directory,
