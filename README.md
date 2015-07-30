@@ -4,6 +4,10 @@ Nightingale's Rose
 
 > Dataset for [Florence Nightingale](https://en.wikipedia.org/wiki/Florence_Nightingale)'s famous [polar area diagram](https://en.wikipedia.org/wiki/Polar_area_diagram).
 
+<div class="image" align="center">
+	<a href="http://bl.ocks.org/kgryte/raw/5926740/"><img src="" alt="Nightingale's famous polar area diagram."></a>
+	<br>
+</div>
 
 ## Installation
 
